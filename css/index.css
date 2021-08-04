@@ -1,129 +1,133 @@
-<!-- 상단 네비게이션 바/하단 호버링 버튼 -->
+< !-- 상단 네비게이션 바/하단 호버링 버튼 -->
 <style>
 	@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
- 
+
 	.portfolio-image {
 		color: blue;
-   	display: none;
+		display: none;
 	}
-  	  .notion-app {
-	      padding-top: 56px;
-	  }
-	
-	  .custom-navbar {
-	    position: fixed;
-	    top: 0;
-      margin-left: 0px;
-      margin-right: 16px;
-	    display: flex;
-      align-items: center;
-	    width: 100%;
-	    height: 56px;
-			background-color: #ffffff;
-			z-index: 1000000;
-      box-shadow: 0 0 4px 4px rgba(0,0,0,0.05);
-	  }
-	
-	  .custom-navbar-logo {
-	  	height: 24px;
-      margin-left: 16px;
-	    margin-right: 8px;
-	  }
-	
-	  .custom-navbar > a {
-	    display: flex;
-	    align-items: center;
-	    justify-content: center;
-			height: 100%;
-	    font-size: 16px;
-	    color: #000000;
-	    font-weight: 600;
-	    flex: 1;
-      margin-right: 3px;
-	    text-decoration: none;
-	    transition: 300ms;
-	  }
-   
-		.cta{
-			position: fixed;
-			bottom: 16px; 
-			left: 0; 
-			right: 0; 
-			margin: 0 auto; 
-			display: flex; 
-			align-self: center; 
-			align-items: center; 
-			justify-content: center; 
-			width: 88%; 
-			max-width: 500px;
-			height: 48px; 
-			background-color: #233e1e; 
-			color: #0d0d0d; 
-			z-index: 999999999; 
-			text-decoration: none; 
-			border-radius: 8px; 
-			font-weight: bold; 
-			font-size: 18px; 
-      color: white;
-			transition: 300ms; 
-			-webkit-box-shadow: 0px 0px 4px 2px rgba(55, 53, 47, 0.4); 
-			-moz-box-shadow: 0px 0px 4px 2px rgba(55, 53, 47, 0.4); 
-			box-shadow: 0px 0px 4px 2px rgba(55, 53, 47, 0.4); 
-			font-family: 'inter', sans-serif;cursor: pointer;
-      
-		}
-  
-    .cta:hover{
-			filter: brightness(88%);
-		}
-  
-  	@media (max-width: 600px) {
-      .custom-navbar-logo {
-				
-		  }
-      img{
-      	height: 18px;
-        margin-top: 3px;
-      }
-      a.externallink {
-      	display: none;
-      }
-		  .custom-navbar > a {
-				font-size: 16px;
-		  }
-      a.longname{
-      	margin-right: 7px;
-      }
-		}
-  		
-  	@media (max-width: 800px){
-     	[data-block-id='85d48c2d-7ace-4a01-9815-b83655de0f49'] {
-				display: none;
-			}
-  	}
-  
-  	@media (min-width: 800px){
-  		[data-block-id='7ff7f07e-1441-4a5e-aa3f-9b5b858b99df'] {
-				display: none;
-			}
-  	}
-  
-    @media handheld{
-  		.cta {
-      	margin: 0px;
-        margin-left: 20px;
-        max-width: 300px;
-      }
-  	}
-  
-  	.page-title{
-  			font-family: 'Do Hyeon', sans-serif;
-  	}
-</style>
 
-<!-- 하단 호버링 버튼 -->
-<script>
-		function handleClick() {
-			window.location.href = 'https://goo.gl/forms/mWfJseksgOSQuYKt1';
+	.notion-app {
+		padding-top: 56px;
+	}
+
+	.custom-navbar {
+		position: fixed;
+		top: 0;
+		margin-left: 0px;
+		margin-right: 16px;
+		display: flex;
+		align-items: center;
+		width: 100%;
+		height: 56px;
+		background-color: #ffffff;
+		z-index: 1000000;
+		box-shadow: 0 0 4px 4px rgba(0, 0, 0, 0.05);
+	}
+
+	.custom-navbar-logo {
+		height: 24px;
+		margin-left: 16px;
+		margin-right: 8px;
+	}
+
+	.custom-navbar>a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+		font-size: 16px;
+		color: #000000;
+		font-weight: 600;
+		flex: 1;
+		margin-right: 3px;
+		text-decoration: none;
+		transition: 300ms;
+	}
+
+	.cta {
+		position: fixed;
+		bottom: 16px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		display: flex;
+		align-self: center;
+		align-items: center;
+		justify-content: center;
+		width: 88%;
+		max-width: 500px;
+		height: 48px;
+		background-color: #233e1e;
+		color: #0d0d0d;
+		z-index: 999999999;
+		text-decoration: none;
+		border-radius: 8px;
+		font-weight: bold;
+		font-size: 18px;
+		color: white;
+		transition: 300ms;
+		-webkit-box-shadow: 0px 0px 4px 2px rgba(55, 53, 47, 0.4);
+		-moz-box-shadow: 0px 0px 4px 2px rgba(55, 53, 47, 0.4);
+		box-shadow: 0px 0px 4px 2px rgba(55, 53, 47, 0.4);
+		font-family: 'inter', sans-serif;
+		cursor: pointer;
+
+	}
+
+	.cta:hover {
+		filter: brightness(88%);
+	}
+
+	@media (max-width: 600px) {
+		.custom-navbar-logo {
+
 		}
+
+		img {
+			height: 18px;
+			margin-top: 3px;
+		}
+
+		a.externallink {
+			display: none;
+		}
+
+		.custom-navbar>a {
+			font-size: 16px;
+		}
+
+		a.longname {
+			margin-right: 7px;
+		}
+	}
+
+	@media (max-width: 800px) {
+		[data-block-id='85d48c2d-7ace-4a01-9815-b83655de0f49'] {
+			display: none;
+		}
+	}
+
+	@media (min-width: 800px) {
+		[data-block-id='7ff7f07e-1441-4a5e-aa3f-9b5b858b99df'] {
+			display: none;
+		}
+	}
+
+	@media handheld {
+		.cta {
+			margin: 0px;
+			margin-left: 20px;
+			max-width: 300px;
+		}
+	}
+
+	.page-title {
+		font-family: 'Do Hyeon', sans-serif;
+	}
+
+	</style>< !-- 하단 호버링 버튼 --><script>function handleClick() {
+		window.location.href='https://goo.gl/forms/mWfJseksgOSQuYKt1';
+	}
+
 </script>
